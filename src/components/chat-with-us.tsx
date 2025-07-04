@@ -129,7 +129,7 @@ export default function ChatSection() {
 
             <motion.img
                 alt=""
-                src={'./images/hero_banner.webp'}
+                src={'./images/chat_bg.png'}
                 initial={{ opacity: 0, scale: 1.1 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
@@ -351,7 +351,7 @@ export default function ChatSection() {
           <div className="relative w-full">
             <motion.img
               alt=""
-              src={'./images/hero_banner.webp'}
+              src={'./images/chat_bg.png'}
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
