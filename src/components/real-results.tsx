@@ -257,54 +257,54 @@ const ResultCard = ({ feature, index }: { feature: Result; index: number }) => (
 );
 
 
-// const ConnectCard = () => (
-//   <motion.div 
-//     className="relative flex flex-col justify-center rounded-2xl bg-neutral-950 p-6 text-left ring-1 shadow-sm ring-black/5 h-full"
-//     variants={featureVariants}
-//     whileHover="hover"
-//     role="listitem"
-//     aria-labelledby={`connected-card`}
-//     >
-//     <div className="flex flex-col h-full justify-center">
-//       <div className='lg:mx-[40px] max-md:p-12'>
-//         <p className="text-4xl max-sm:text-3xl text-center font-[family-name:var(--font-display)] font-medium text-white">
-//           Most of our customers have faced issues and have made peace with it
-//         </p>
-//       </div>
-//       <a
-//         href="#contact"
-//         className="mt-6 inline-flex items-center justify-center text-center px-6 py-3 border border-transparent text-2xl max-sm:text-xl font-medium rounded-md shadow-sm text-neutral-950 bg-white hover:bg-neutral-100 transition-colors duration-200 font-[family-name:var(--font-sans)]"
-//       >
-//         It doesn&apos;t have to be that way!
-//       </a>
-//     </div>
-//   </motion.div>
-// );
-
 const ConnectCard = () => (
   <motion.div 
-    className="relative flex flex-col justify-center rounded-2xl bg-neutral-950 p-4 min-[400px]:p-6 min-[500px]:p-8 text-left ring-1 shadow-sm ring-black/5 h-full"
+    className="relative flex flex-col justify-center rounded-2xl bg-neutral-950 p-6 text-left ring-1 shadow-sm ring-black/5 h-full"
     variants={featureVariants}
     whileHover="hover"
     role="listitem"
-    aria-labelledby="connected-card"
-  >
-    <div className="flex flex-col h-full justify-center items-center">
-      <div className='w-full max-w-2xl p-4 min-[400px]:p-6 min-[500px]:p-8'>
-        <p className="text-2xl min-[400px]:text-3xl min-[500px]:text-4xl text-center font-[family-name:var(--font-display)] font-medium text-white">
+    aria-labelledby={`connected-card`}
+    >
+    <div className="flex flex-col h-full justify-center">
+      <div className='lg:mx-[40px] max-md:p-12'>
+        <p className="text-4xl max-sm:text-3xl text-center font-[family-name:var(--font-display)] font-medium text-white">
           Most of our customers have faced issues and have made peace with it
         </p>
       </div>
-      
       <a
         href="#contact"
-        className="mt-4 min-[400px]:mt-6 min-[500px]:mt-8 w-full max-w-xs inline-flex items-center justify-center text-center px-6 py-3 border border-transparent text-lg min-[400px]:text-xl min-[500px]:text-2xl font-medium rounded-md shadow-sm text-neutral-950 bg-white hover:bg-neutral-100 transition-colors duration-200 font-[family-name:var(--font-sans)]"
+        className="mt-6 inline-flex items-center justify-center text-center px-6 py-3 border border-transparent text-2xl max-sm:text-xl font-medium rounded-md shadow-sm text-neutral-950 bg-white hover:bg-neutral-100 transition-colors duration-200 font-[family-name:var(--font-sans)]"
       >
         It doesn&apos;t have to be that way!
       </a>
     </div>
   </motion.div>
 );
+
+// const ConnectCard = () => (
+//   <motion.div 
+//     className="relative flex flex-col justify-center rounded-2xl bg-neutral-950 p-4 min-[400px]:p-6 min-[500px]:p-8 text-left ring-1 shadow-sm ring-black/5 h-full"
+//     variants={featureVariants}
+//     whileHover="hover"
+//     role="listitem"
+//     aria-labelledby="connected-card"
+//   >
+//     <div className="flex flex-col h-full justify-center items-center">
+//       <div className='w-full max-w-2xl p-4 min-[400px]:p-6 min-[500px]:p-8'>
+//         <p className="text-2xl min-[400px]:text-3xl min-[500px]:text-4xl text-center font-[family-name:var(--font-display)] font-medium text-white">
+//           Most of our customers have faced issues and have made peace with it
+//         </p>
+//       </div>
+      
+//       <a
+//         href="#contact"
+//         className="mt-4 min-[400px]:mt-6 min-[500px]:mt-8 w-full max-w-xs inline-flex items-center justify-center text-center px-6 py-3 border border-transparent text-lg min-[400px]:text-xl min-[500px]:text-2xl font-medium rounded-md shadow-sm text-neutral-950 bg-white hover:bg-neutral-100 transition-colors duration-200 font-[family-name:var(--font-sans)]"
+//       >
+//         It doesn&apos;t have to be that way!
+//       </a>
+//     </div>
+//   </motion.div>
+// );
 
 export default function RealResults() {
   // Structured data for SEO
