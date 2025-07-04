@@ -90,7 +90,9 @@ export default function HeroSection() {
   return (
     <motion.section
     //   className="relative isolate overflow-hidden mx-auto max-w-7xl h-[900px] mt-[30px] rounded-lg bg-neutral-50 ring shadow ring-neutral-950/10"
-    className="relative isolate overflow-hidden mx-auto max-w-7xl h-[900px] mt-[30px] rounded-lg"
+    className="relative isolate overflow-hidden mx-auto max-w-7xl mt-[30px] rounded-lg
+    h-[450px] min-[400px]:h-[600px] min-[500px]:h-[700px] sm:h-[800px] md:h-[900px]
+    "
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -113,7 +115,7 @@ export default function HeroSection() {
 
             <motion.div 
                 // className='my-auto max-md:mx-auto lg:w-[704px] h-[716px] p-[64px] absolute inset-0 z-10 rounded-lg bg-black/30 backdrop-blur-[10px] border border-white/20 ml-[84px] lg:mt-[84px] lg:mb-[84px] md:w-[504px] sm:w-[454px] max-sm:w-auto max-sm:mr-[48px] max-sm:ml-[48px] max-sm:px-[48px]'
-                className="my-auto max-md:mx-auto lg:w-[704px] h-auto min-h-[500px] absolute inset-0 z-10 rounded-lg bg-black/30 backdrop-blur-[10px] border border-white/20 
+                className="my-auto max-md:mx-auto lg:w-[704px] h-auto min-h-[300px] absolute inset-0 z-10 rounded-lg bg-black/30 backdrop-blur-[10px] border border-white/20 
                 mx-5 min-[400px]:mx-10 min-[500px]:mx-12 sm:mx-16 md:ml-20 
                 mt-5 min-[400px]:mt-10 min-[500px]:mt-12 sm:mt-16 md:mt-20 
                 mb-5 min-[400px]:mb-10 min-[500px]:mb-12 sm:mb-16 md:mb-20 
