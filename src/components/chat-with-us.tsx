@@ -168,13 +168,12 @@ export default function ChatSection() {
                       variants={buttonVariants}
                       whileHover={{ scale: 1.03 }}
                       whileTap={{ scale: 0.97 }}
-                      className="w-full sm:w-auto items-end text-right my-8"
+                      className="mt-auto flex justify-end"
                     >
                       <Button 
                         href="https://cal.com/amol-surve-webcyper/30min" 
                         variant="primary" 
-                        className="w-full sm:min-w-[200px] px-6 py-3 
-                          text-base min-[400px]:text-lg min-[500px]:text-xl text-right"
+                        className="min-w-[200px] px-6 py-3 text-base"
                       >
                         Get on a Phone Call
                       </Button>
