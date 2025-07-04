@@ -91,7 +91,7 @@ export default function HeroSection() {
     <motion.section
     //   className="relative isolate overflow-hidden mx-auto max-w-7xl h-[900px] mt-[30px] rounded-lg bg-neutral-50 ring shadow ring-neutral-950/10"
     className="relative isolate overflow-hidden mx-auto max-w-7xl mt-[30px] rounded-lg
-    h-[450px] min-[400px]:h-[600px] min-[500px]:h-[700px] sm:h-[800px] md:h-[900px]
+    h-[450px] min-[400px]:h-[600px] min-[500px]:h-[650px] sm:h-[700px] md:h-[700px]
     "
       initial="hidden"
       whileInView="visible"
@@ -114,12 +114,17 @@ export default function HeroSection() {
             {/* <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/60 z-10" /> */}
 
             <motion.div 
-                // className='my-auto max-md:mx-auto lg:w-[704px] h-[716px] p-[64px] absolute inset-0 z-10 rounded-lg bg-black/30 backdrop-blur-[10px] border border-white/20 ml-[84px] lg:mt-[84px] lg:mb-[84px] md:w-[504px] sm:w-[454px] max-sm:w-auto max-sm:mr-[48px] max-sm:ml-[48px] max-sm:px-[48px]'
+                // className="my-auto max-md:mx-auto lg:w-[704px] h-auto min-h-[300px] absolute inset-0 z-10 rounded-lg bg-black/30 backdrop-blur-[10px] border border-white/20 
+                // mx-5 min-[400px]:mx-10 min-[500px]:mx-12 sm:mx-16 md:ml-20 
+                // mt-5 min-[400px]:mt-10 min-[500px]:mt-12 sm:mt-16 md:mt-20 
+                // mb-5 min-[400px]:mb-10 min-[500px]:mb-12 sm:mb-16 md:mb-20 
+                // p-4 min-[300px]:p-6 min-[400px]:p-8 min-[500px]:p-10 sm:p-12 md:p-16 
+                // max-sm:mx-4 max-sm:px-6"
                 className="my-auto max-md:mx-auto lg:w-[704px] h-auto min-h-[300px] absolute inset-0 z-10 rounded-lg bg-black/30 backdrop-blur-[10px] border border-white/20 
-                mx-5 min-[400px]:mx-10 min-[500px]:mx-12 sm:mx-16 md:ml-20 
-                mt-5 min-[400px]:mt-10 min-[500px]:mt-12 sm:mt-16 md:mt-20 
-                mb-5 min-[400px]:mb-10 min-[500px]:mb-12 sm:mb-16 md:mb-20 
-                p-4 min-[300px]:p-6 min-[400px]:p-8 min-[500px]:p-10 sm:p-12 md:p-16 
+                mx-5 min-[400px]:mx-6 min-[500px]:mx-8 sm:mx-16 md:ml-20 
+                mt-5 min-[400px]:mt-10 min-[500px]:mt-10 sm:mt-16 md:mt-20 
+                mb-5 min-[400px]:mb-10 min-[500px]:mb-10 sm:mb-16 md:mb-20 
+                p-4 min-[300px]:p-6 min-[400px]:p-8 min-[500px]:p-10 sm:p-12 md:p-16
                 max-sm:mx-4 max-sm:px-6"
                 variants={contentVariants}>
                 <motion.h1
@@ -132,8 +137,7 @@ export default function HeroSection() {
                     // sm:text-7xl 
                     // md:text-7xl 
                     // lg:text-[120px] 
-                    // lg:leading-[1.2]
-                    // "
+                    // lg:leading-[1.2]"
                     className="mx-auto max-w-full text-white font-[family-name:var(--font-display)] font-[400] tracking-normal text-balance text-neutral-950 
                     text-3xl 
                     min-[300px]:text-4xl 
@@ -141,8 +145,8 @@ export default function HeroSection() {
                     min-[500px]:text-6xl 
                     sm:text-7xl 
                     md:text-7xl 
-                    lg:text-[120px] 
-                    lg:leading-[1.2]"
+                    lg:text-[80px] 
+                    lg:leading-[1.05]"
                     variants={titleVariants}
                     itemProp="headline"
                 >
@@ -150,10 +154,13 @@ export default function HeroSection() {
                 </motion.h1>
 
                 <motion.p
-                    // className="text-basefont-medium text-white mx-auto mt-[48px] w-full max-w-full text-center max-[300px]:text-xl text-xl sm:text-3xl sm:w-auto sm:max-w-3xl md:text-left "
-                    className="text-white mx-auto w-full max-w-full 
-                    text-lg min-[300px]:text-xl min-[400px]:text-2xl min-[500px]:text-3xl 
-                    mt-6 min-[300px]:mt-8 min-[400px]:mt-10 min-[500px]:mt-12 
+                    // className="text-white mx-auto w-full max-w-full 
+                    // text-lg min-[300px]:text-xl min-[400px]:text-2xl min-[500px]:text-3xl 
+                    // mt-6 min-[300px]:mt-8 min-[400px]:mt-10 min-[500px]:mt-12 
+                    // text-center md:text-left"
+                    className="text-white w-full md:w-[70%] max-w-full 
+                    text-md min-[300px]:text-lg min-[400px]:text-xl min-[500px]:text-xl 
+                    mt-6 min-[300px]:mt-8 min-[400px]:mt-10 min-[500px]:mt-10 md:mt-12 lg:mt-10
                     text-center md:text-left"
                     variants={descriptionVariants}
                     itemProp="description"
@@ -162,10 +169,12 @@ export default function HeroSection() {
                 </motion.p>
 
                 <motion.div
-                    // className="mt-[48px] flex w-full lg:flex-row max-lg:flex-col gap-4 lg:items-end max-lg:items-center max-lg:justify-center"
+                    // className="w-full 
+                    // mt-8 min-[300px]:mt-10 min-[400px]:mt-12 
+                    // flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-start"
                     className="w-full 
-                    mt-8 min-[300px]:mt-10 min-[400px]:mt-12 
-                    flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-start"
+                    mt-8 min-[300px]:mt-10 min-[400px]:mt-12 md:mt-12 lg:mt-10
+                    flex flex-col sm:flex-row max-[350px]:gap-2 gap-4 sm:gap-6 items-center justify-start"
                     variants={buttonGroupVariants}
                 >
                     <motion.div
@@ -177,8 +186,10 @@ export default function HeroSection() {
                       <Button 
                         href="https://cal.com/amol-surve-webcyper/30min" 
                         variant="primary" 
-                        className="w-full sm:min-w-[200px] px-6 py-3 
-                          text-base min-[400px]:text-lg min-[500px]:text-xl"
+                        // className="w-full sm:min-w-[200px] px-6 py-3 
+                        //   text-base min-[400px]:text-lg min-[500px]:text-xl"
+                        className="w-full sm:min-w-[200px] px-6 py-3
+                          text-base max-[400px]:text-md min-[400px]:text-lg min-[700px]:text-xl"
                       >
                         Let&apos;s Talk
                       </Button>
@@ -192,8 +203,10 @@ export default function HeroSection() {
                       <Button 
                         href="/#featured-projects" 
                         variant="secondary" 
-                        className="w-full sm:min-w-[200px] px-6 py-3 
-                          text-base min-[400px]:text-lg min-[500px]:text-xl"
+                        // className="w-full sm:min-w-[200px] px-6 py-3 
+                        //   text-base min-[400px]:text-lg min-[500px]:text-xl"
+                        className="w-full sm:min-w-[200px] px-6 py-3
+                          text-base min-[400px]:text-lg min-[700px]:text-xl"
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 min-[400px]:size-6 text-white">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
