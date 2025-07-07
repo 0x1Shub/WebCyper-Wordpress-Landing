@@ -50,20 +50,20 @@ const testimonials = [
     quote: "You don't pay unless we deliver. That's our promise.",
     companyLogo: '/images/company/motofits_logo.png',
   },
-  // {
-  //   id: 5,
-  //   img: '/images/our_customer.png',
-  //   title: 'VP of Sales, Detax',
-  //   quote: 'I was able to replace 80% of my team with RadiantAI bots.',
-  //   companyLogo: '/images/company/scarface_logo.png',
-  // },
-  // {
-  //   id: 6,
-  //   img: '/images/our_customer.png',
-  //   title: 'Account Manager, Commit',
-  //   quote: 'I’ve smashed all my targets without having to speak to a lead in months.',
-  //   companyLogo: '/images/company/sysarks_logo.png',
-  // },
+  {
+    id: 5,
+    img: '/images/our_customer.png',
+    title: 'VP of Sales, Detax',
+    quote: 'I was able to replace 80% of my team with RadiantAI bots.',
+    companyLogo: '/images/company/scarface_logo.png',
+  },
+  {
+    id: 6,
+    img: '/images/our_customer.png',
+    title: 'Account Manager, Commit',
+    quote: 'I’ve smashed all my targets without having to speak to a lead in months.',
+    companyLogo: '/images/company/sysarks_logo.png',
+  },
 ];
 
 
@@ -461,7 +461,7 @@ export function Customers() {
               '[--scroll-padding:max(theme(spacing.6),calc((100vw-theme(maxWidth.2xl))/2))] lg:[--scroll-padding:max(theme(spacing.8),calc((100vw-theme(maxWidth.7xl))/2))]',
             ])}
           >
-            {testimonials.map(({ img, title, quote }, testimonialIndex) => (
+            {testimonials.slice(0, 4).map(({ img, title, quote }, testimonialIndex) => (
               <motion.div
                 key={testimonialIndex}
                 custom={direction}
@@ -498,7 +498,7 @@ export function Customers() {
             </motion.button>
 
             <div className="flex gap-2">
-              {testimonials.map((_, index) => (
+              {testimonials.slice(0, 4).map((_, index) => (
                 <motion.button
                   key={index}
                   onClick={() => scrollTo(index, index > activeIndex ? 1 : -1)}
