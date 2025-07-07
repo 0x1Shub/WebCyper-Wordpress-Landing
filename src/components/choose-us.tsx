@@ -40,30 +40,30 @@ const testimonials = [
     id: 3,
     img: '/images/our_customer.png',
     title: '👨‍💻 India-Based Team, Available 24X7',
-    quote: 'No time zone drama. Get direct access to real WordPress pros anytime',
+    quote: 'No time zone drama. Get direct access to real WordPress pros anytime.',
     companyLogo: '/images/company/slimkm_logo.png',
   },
   {
     id: 4,
-    img: '/images/our_customer.png',
-    title: 'CSO, Planeteria',
-    quote: 'We’ve managed to put two of our main competitors out of business in 6 months.',
+    img: '/images/safe_guard.png',
+    title: '🚫 No Fix? No Fee.',
+    quote: "You don't pay unless we deliver. That's our promise.",
     companyLogo: '/images/company/motofits_logo.png',
   },
-  {
-    id: 5,
-    img: '/images/our_customer.png',
-    title: 'VP of Sales, Detax',
-    quote: 'I was able to replace 80% of my team with RadiantAI bots.',
-    companyLogo: '/images/company/scarface_logo.png',
-  },
-  {
-    id: 6,
-    img: '/images/our_customer.png',
-    title: 'Account Manager, Commit',
-    quote: 'I’ve smashed all my targets without having to speak to a lead in months.',
-    companyLogo: '/images/company/sysarks_logo.png',
-  },
+  // {
+  //   id: 5,
+  //   img: '/images/our_customer.png',
+  //   title: 'VP of Sales, Detax',
+  //   quote: 'I was able to replace 80% of my team with RadiantAI bots.',
+  //   companyLogo: '/images/company/scarface_logo.png',
+  // },
+  // {
+  //   id: 6,
+  //   img: '/images/our_customer.png',
+  //   title: 'Account Manager, Commit',
+  //   quote: 'I’ve smashed all my targets without having to speak to a lead in months.',
+  //   companyLogo: '/images/company/sysarks_logo.png',
+  // },
 ];
 
 
